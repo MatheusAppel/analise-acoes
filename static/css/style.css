@@ -1,0 +1,181 @@
+/* Tema escuro */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+/* Cards */
+.card {
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #3d3d3d;
+    border-bottom: 1px solid #4d4d4d;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1rem 1.5rem;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+/* Formulários */
+.form-control {
+    background-color: #3d3d3d;
+    border: 1px solid #4d4d4d;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+    background-color: #4d4d4d;
+    border-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-label {
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Lista de grupos */
+.list-group-item {
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+}
+
+.list-group-item strong {
+    color: #007bff;
+}
+
+/* Cards de Valuation */
+.valuation-card {
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    border-radius: 15px;
+    padding: 1.5rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.valuation-card:hover {
+    background-color: #3d3d3d;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.valuation-card h4 {
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.valuation-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ff00;
+    margin: 1.5rem 0;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.valuation-card .premissas {
+    text-align: left;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #3d3d3d;
+}
+
+.valuation-card .premissas h5 {
+    color: #007bff;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.valuation-card .premissas ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.valuation-card .premissas li {
+    margin-bottom: 0.5rem;
+}
+
+/* Gráfico */
+#priceChart {
+    width: 100% !important;
+    height: 600px;
+    margin: 20px 0;
+    background-color: #2d2d2d;
+}
+
+.js-plotly-plot {
+    width: 100% !important;
+}
+
+.plotly-graph-div {
+    width: 100% !important;
+}
+
+/* Título principal */
+h1 {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .valuation-card {
+        margin-bottom: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
